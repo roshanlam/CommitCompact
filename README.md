@@ -3,6 +3,9 @@
 ## Overview
 A web-based tool designed to help developers create concise, meaningful, and standardized commit messages for their Git repositories. By inputting a detailed description of their code changes, users can generate a summarized, clear commit message that adheres to best practices.
 
+
+<img src="ScreenShot.png"/>
+
 ## Features
 - **Detailed to Concise**: Transforms detailed descriptions of code changes into concise, clear commit messages.
 - **Customizable Templates**: Offers different templates for various types of commits (e.g., feature, fix, refactor, documentation).
