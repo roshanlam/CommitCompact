@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CommitCompact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-md mx-auto my-10 bg-white p-8 rounded-xl shadow-md">
+        <h2 class="text-2xl font-bold text-center text-gray-700 mb-4">
+          Git Commit Message Generator
+        </h2>
+        <form method="post" class="space-y-5">
+          <textarea
+            name="description"
+            placeholder="Describe your changes..."
+            rows="4"
+            cols="50"
+            class="w-full p-2 border border-gray-300 rounded-md"
+          ></textarea>
+          <input
+            type="submit"
+            value="Generate Commit Message"
+            class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+          />
+        </form>
+        {% if commit_message %}
+        <div class="mt-6">
+          <h3 class="text-xl font-semibold text-gray-700">
+            Generated Commit Message:
+          </h3>
+          <p class="bg-gray-100 p-2 rounded border border-gray-300 mt-2">
+            {{ commit_message }}
+          </p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
